@@ -1,0 +1,58 @@
+/* impostazioni generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 1%;
+}
+/* impostazioni header */
+header {
+  height: 100px;
+  /* dati superflui */
+  background-color: yellow;
+}
+/* impostazioni parte principale (main)*/
+/* impostazioni blocco che contiene le tre sezioni */
+#contenitore {
+  margin: 0.5% 0;
+}
+/* impostazioni delle tre sezioni */
+#contenitore::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sezione {
+  float: left;
+  width: 24%;
+}
+.sezionesinistra {
+  /* dati superflui */
+  height: 300px;
+  background-color: lightgreen;
+}
+.sezionecentrale{
+  margin: 0 1%;
+  width: 50%;
+  /* dati superflui */
+  height: 500px;
+  background-color: green;
+}
+.sezionedestra {
+
+}
+/* impostazioni blocchi all'interno della sezione di destra */
+.bloccosezdestra {
+  margin-bottom: 3%;
+  /* dati superflui */
+  height: 240px;
+  background-color: lightgreen;
+}
+/* impostazioni footer */
+footer {
+  height: 75px;
+  /* dati superflui */
+  background-color: lightblue;
+}
