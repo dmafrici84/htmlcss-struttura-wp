@@ -4,8 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  margin: 1%;
+#contenitorepagina {
+  width: 80%;
+  margin: 12px auto;
 }
 /* impostazioni header */
 header {
@@ -15,11 +16,11 @@ header {
 }
 /* impostazioni parte principale (main)*/
 /* impostazioni blocco che contiene le tre sezioni */
-#contenitore {
-  margin: 0.5% 0;
+.contenitoresezioni {
+  margin: 5px 0;
 }
 /* impostazioni delle tre sezioni */
-#contenitore::after {
+.contenitoresezioni::after {
   content: "";
   display: table;
   clear: both;
@@ -45,7 +46,7 @@ header {
 }
 /* impostazioni blocchi all'interno della sezione di destra */
 .bloccosezdestra {
-  margin-bottom: 3%;
+  margin-bottom: 10px;
   /* dati superflui */
   height: 240px;
   background-color: lightgreen;
